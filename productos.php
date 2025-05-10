@@ -38,10 +38,10 @@
           <li class="dropdown">
             <a href="categorias.html" class="menuprincipal">&#9776 CATEGORÍAS</a>
             <ul class="dropdown-contenido">
-              <li class="ordenadores"><a href="productos.html">Ordenadores</a></li>
-              <li class="componentes"><a href="productos.html">Componentes</a></li>
-              <li class="perifericos"><a href="productos.html">Periféricos</a></li>
-              <li class="software"><a href="productos.html">Software</a></li>
+              <li class="ordenadores"><a href="productos.php">Ordenadores</a></li>
+              <li class="componentes"><a href="productos.php">Componentes</a></li>
+              <li class="perifericos"><a href="productos.php">Periféricos</a></li>
+              <li class="software"><a href="productos.php">Software</a></li>
             </ul>
           <li><a href="contacto.html" class="menuprincipal">CONTACTO</a></li>
         </ul>
