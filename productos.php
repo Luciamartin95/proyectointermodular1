@@ -31,7 +31,7 @@
 ?>
   <header>
       <div class="logo">
-          <img src="C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/logo.jpg" alt="Logo de BitMarket">
+          <img src="proyectointermodular1/images/logo.jpg" alt="Logo de BitMarket">
       </div>
       <nav>
         <ul>
