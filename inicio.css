@@ -1,0 +1,240 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f7; 
+    color: #333; 
+    letter-spacing: 0.01em;
+}
+a {
+    text-decoration: none;
+    color: #eef3f7; 
+}
+header {
+    background-color: #003366;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em 0.5em;
+}
+header .logo img {
+    height: 2.5em;
+    margin-right: 0.5em;
+}
+nav ul {
+    list-style: none;
+    margin: 0.5em;
+    padding: 0em;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    position: relative;
+    margin-right: 0.5em;
+    align-content: left;
+}
+nav ul li a {
+    display: block;
+    padding: 0em 1em;
+    margin-right: 0.625em;
+    text-decoration: none;
+    color: white;
+}
+.dropdown-contenido {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    min-width: 10em;
+}  
+.dropdown-contenido li {
+    float: none;
+    display: block;
+}
+.dropdown-contenido a {
+    padding: 0.75em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menuprincipal {
+    display: flex;
+}
+.menuprincipal:hover {
+    color: skyblue;
+}
+.dropdown:hover .dropdown-contenido {
+    display: block;
+}
+.ordenadores:hover {
+    background-color: #ff914d;
+}
+.componentes:hover {
+    background-color: #ff914d;
+}
+.perifericos:hover{
+    background-color: #ff914d;
+}
+.software:hover {
+    background-color: #ff914d;
+}
+.busqueda {
+    position: left;
+    display: inline-block;
+    border: 0.5em solid #003366;
+    border-radius: 5em;
+    padding: 0.5em;
+    background-color: white;
+}
+.busqueda:hover {
+    border-color: white;
+    border-style:ridge;
+    border-width: 0.1em;
+}
+#textobusqueda {
+    border: none;
+    outline: none;
+    width: 45em;
+    padding: 0.1em;
+    background: url('C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/search.png') no-repeat right center; 
+    background-size: 1em;
+    cursor: text;
+}
+.botonesusuarios {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+}
+.botonusuario {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #003366;
+        color: white;
+        border: 0.125em solid #ff914d; 
+        border-radius: 0.75em; 
+        padding: 0.5em 1em; 
+        margin-left: 0.8em; 
+        cursor: pointer;
+        width: auto; 
+        height: 2.5em; 
+        font-size: 1em; 
+}
+.botonusuario:hover {
+    background-color: #ff914d;
+    color: #eef3f7;
+}
+.icon-user:before {
+    content: "\e7fd";
+    font-family: 'icomoon';
+    margin: 0.5em;
+}
+.icon-cart:before {
+    content: "\e93a";
+    font-family: 'icomoon';
+    margin: 0.5em;
+}
+.textoprinc {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 1em;
+}
+.textosecun {
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+}
+.banner {
+    background-image: url('C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 0.5em;
+}
+.banner h1 {
+    font-size: 2.5em;
+}
+h2 {
+    text-align: left;
+    padding: 0.5em;
+    text-decoration: underline darkblue;
+    word-spacing: -0.1em;
+    margin-bottom: 0.01em;
+}
+.productos-destacados {
+    text-align: center;
+  }
+.destacados {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.producto {
+    width: 48%;
+    height:100%;
+    margin: 0 0.5em;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.imagen-producto {
+    width: 12em;
+    height: 12em;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ff914d;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.imagen-producto img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.info-producto {
+    padding: 0.1em;
+    margin-top: 0.1em;
+    margin-bottom: 1em;
+    letter-spacing: -0.01em;
+}
+.precio {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.producto:hover {
+    transform: translateY(-0.5em);
+  }
+.boton-cesta {
+    background-color: #ff914d; 
+    color: white;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 0.5em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
