@@ -62,7 +62,7 @@ CREATE TABLE ARTICULO_FACTURA (
     FOREIGN KEY (cod_a) REFERENCES ARTICULO(cod_a),
     FOREIGN KEY (num_fac) REFERENCES FACTURA(num_fac)
 );
-INSERT INTO articulo (cod_a, descripcion, stock, precio_venta)
+INSERT INTO ARTICULO (cod_a, descripcion, stock, precio_venta)
 VALUES (001, 'Portátil Gaming 16" QHD 165Hz, Intel Core i7-11800H, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3070', 5, 1400), 
 (002, 'Teclado mecánico RGB con switches Cherry MX Low Profile Speed, retroiluminación RGB por tecla', 8, 160),
 (003, 'Monitor Gaming Ultrawide 34" 3440x1440 144Hz (160Hz OC) 1ms IPS G-Sync Compatible HDR400', 2, 600),
