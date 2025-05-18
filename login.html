@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitMarket Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/67384fbf93/UntitledProject/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/logo.jpg" alt="Logo de BitMarket">
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="categorias.html" class="menuprincipal">☰ CATEGORÍAS</a>
+                    <ul class="dropdown-contenido">
+                        <li class="ordenadores"><a href="productos.html">Ordenadores</a></li>
+                        <li class="componentes"><a href="productos.html">Componentes</a></li>
+                        <li class="perifericos"><a href="productos.html">Periféricos</a></li>
+                        <li class="software"><a href="productos.html">Software</a></li>
+                    </ul>
+                <li><a href="contacto.html" class="menuprincipal">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar productos, marcas y más..." id="textobusqueda">
+        </div>
+        <div class="botonesusuarios">
+            <button class="botonusuario">
+            <span class="icon-user"></span><a href="login.html">Iniciar sesión</a></button>
+            <button class="botonusuario">
+            <span class="icon-cart"></span> Mi cesta</button>
+        </div>
+    </header>
+    <main class="login-page">
+        <div class="new-account-section">
+            <h2>¿Eres nuevo en BitMarket?</h2>
+            <p>Con tu cuenta de usuario podrás:</p>
+            <ul>
+                <li>Hacer seguimientos de tus pedidos</li>
+                <li>Acceder a tu historial de compras</li>
+                <li>Guardar productos favoritos</li>
+                <li>Recibir ofertas exclusivas</li>
+                <li>Establecer alertas de disponibilidad</li>
+            </ul>
+            <button class="create-account-button">Crear cuenta</button>
+        </div>
+        <div class="login-section">
+            <h2>Iniciar sesión</h2>
+            <form autocomplete="on" class="login-form">
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Introduce tu email" class="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="contraseña" placeholder="Introduce tu contraseña" class="contraseña">
+                </div>
+                <a href="#" class="forgot-password">¿Has olvidado tu contraseña?</a>
+                <button type="submit" class="login-button">Acceder</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 BitMarket Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
