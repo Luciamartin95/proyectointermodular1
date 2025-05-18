@@ -2,13 +2,13 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef3f7; 
-    color: #333; 
+    background-color: #eef3f7;
+    color: #333;
     letter-spacing: 0.01em;
 }
 a {
     text-decoration: none;
-    color: #eef3f7; 
+    color: #eef3f7;
 }
 header {
     background-color: #003366;
@@ -45,7 +45,7 @@ nav ul li a {
     position: absolute;
     background-color: #003366;
     min-width: 10em;
-}  
+}
 .dropdown-contenido li {
     float: none;
     display: block;
@@ -71,7 +71,7 @@ nav ul li a {
 .componentes:hover {
     background-color: #ff914d;
 }
-.perifericos:hover{
+.perifericos:hover {
     background-color: #ff914d;
 }
 .software:hover {
@@ -87,7 +87,7 @@ nav ul li a {
 }
 .busqueda:hover {
     border-color: white;
-    border-style:ridge;
+    border-style: ridge;
     border-width: 0.1em;
 }
 #textobusqueda {
@@ -95,7 +95,7 @@ nav ul li a {
     outline: none;
     width: 45em;
     padding: 0.1em;
-    background: url('C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/search.png') no-repeat right center; 
+    background: url('C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/search.png') no-repeat right center;
     background-size: 1em;
     cursor: text;
 }
@@ -105,19 +105,19 @@ nav ul li a {
     margin-left: 0.5em;
 }
 .botonusuario {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #003366;
-        color: white;
-        border: 0.125em solid #ff914d; 
-        border-radius: 0.75em; 
-        padding: 0.5em 1em; 
-        margin-left: 0.8em; 
-        cursor: pointer;
-        width: auto; 
-        height: 2.5em; 
-        font-size: 1em; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #003366;
+    color: white;
+    border: 0.125em solid #ff914d;
+    border-radius: 0.75em;
+    padding: 0.5em 1em;
+    margin-left: 0.8em;
+    cursor: pointer;
+    width: auto;
+    height: 2.5em;
+    font-size: 1em;
 }
 .botonusuario:hover {
     background-color: #ff914d;
@@ -133,101 +133,110 @@ nav ul li a {
     font-family: 'icomoon';
     margin: 0.5em;
 }
-h1 {
-    text-align: center;
-}
-h4 {
-    text-align: center;
-}
-legend {
-    text-align: center;
-    font-style: bold;
-}
-form {
-    width: 85em; 
-    margin: 0.5em auto; 
-    background-color: #003366; 
-    padding: 2.5em; 
-    border-radius: 1.5em;
-    color: white; 
-}
-fieldset {
-    text-align: center;
-}
-input[type="textform"], input[type="email"] {
-    border: 1px solid #ccc;
-    border-radius: 0.25em;
-    width: 84em;
-    height: 3em;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
-textarea[type="formulario"] {
-    border: 0.25em solid #ccc;
-    border-radius: 0.25em;
-    width: 84em;
-    height: 15em;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
-input[type="textform"]:focus, input[type="email"]:focus, textarea[type="formulario"]:focus {
-    background-color: #ff914d; 
-}
-input[type="submit"] {
-    border: none;
-    border-radius: 0.25em;
-    background-color: #ccc;
-    color: black;
-    width: 5em;
-    height: 3em;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
-input[type="submit"]:active {
-    background-color: #ff914d;
-    color: #ccc; 
-    width: 5.2em;
-    height: 3.2em;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
-div.datoscontacto {
+.main-contacto {
     display: flex;
     justify-content: center;
-    margin-top: 2em; 
-    width: 85em;
-    margin: 0.5em auto; 
-    padding: 2.5em;  
+    align-items: flex-start;
+    padding: 2em;
+    gap: 2em; 
 }
-.datoscontacto {
+.formulario-contacto {
+    width: 45%; 
+    padding: 2em;
+    background-color: #003366;
+    border-radius: 1.5em;
+    color: white;
+    box-sizing: border-box;
+}
+.formulario-contacto h1,
+.formulario-contacto h4 {
+    text-align: left;
+    margin-bottom: 1em;
+}
+.form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.formulario-contacto input[type="textform"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    width: 100%;
+    padding: 0.75em;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.formulario-contacto input[type="textform"]:focus,
+.formulario-contacto input[type="email"]:focus,
+.formulario-contacto textarea:focus {
     background-color: #ff914d;
     color: #eef3f7;
-    width: 15em;
-    height: 12em;
-    border-radius: 1.25em;
-    text-shadow: #333;
-    padding: 1em 1em;
-    box-shadow: 0 0 0.5em #333;
-    text-align: center;
-    display: block !important;
+    outline: none;
 }
-.datoscontacto p {
+.formulario-contacto input[type="submit"] {
+    border: none;
+    border-radius: 0.25em;
+    background-color: #ff914d;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; 
+    display: block; 
+    margin-top: 1em;
+}
+.formulario-contacto input[type="submit"]:hover {
+    background-color: #cc6633;
+}
+.ubicacion-contacto {
+    width: 45%; 
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 1.5em;
+    color: #333;
+    box-sizing: border-box;
+    text-align: left;
+}
+.ubicacion-contacto h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #003366;
+}
+.ubicacion-contacto p {
     margin-bottom: 0.8em;
     font-size: 1em;
-    text-align: center;
-    display: block !important;
 }
-.icon-envelope:before {
-    content: "\e900";
-}
-.icon-office:before {
+.ubicacion-contacto .icon-office:before {
     content: "\6b";
+    font-family: 'icomoon';
+    margin-right: 0.5em;
+    color: #003366;
 }
-.icon-instagram:before {
-    content: "\ea92";
-}
-.icon-whatsapp:before {
+.ubicacion-contacto .icon-whatsapp:before {
     content: "\ea93";
+    font-family: 'icomoon';
+    margin-right: 0.5em;
+    color: #003366;
+}
+.ubicacion-contacto .icon-envelope:before {
+    content: "\e900";
+    font-family: 'icomoon';
+    margin-right: 0.5em;
+    color: #003366;
+}
+.ubicacion-contacto .mapa {
+    margin-top: 1.5em;
+    border-radius: 0.5em;
+    overflow: hidden; 
 }
 footer {
     background-color: #003366;

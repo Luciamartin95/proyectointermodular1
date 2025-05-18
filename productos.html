@@ -8,30 +8,9 @@
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/67384fbf93/UntitledProject/style.css">
 </head>
 <body>
-   <!-- DATABASE CONFIG -->
-   <?php
-   // Mostrar todos los errores (útil para debugging)
-   ini_set('display_errors', 1);
-   error_reporting(E_ALL);
-
-   // Conectar a la base de datos
-   // Cambiar el servername por el que proceda: localhost, mysql (docker), dirección IP, cadena de Azure Mysql
-   $servername = "localhost:3306";
-   $username = "root";
-   $password = "postgres";
-   $dbname = "luciamartinparejo";
-
-   $conn = new mysqli($servername, $username, $password, $dbname);
-
-   // Verificar la conexión
-   if ($conn->connect_error) {
-       die("Conexión fallida: " . $conn->connect_error);
-   }
-
-?>
   <header>
       <div class="logo">
-          <img src="proyectointermodular1/images/logo.jpg" alt="Logo de BitMarket">
+          <img src="C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/logo.jpg" alt="Logo de BitMarket">
       </div>
       <nav>
         <ul>
@@ -57,43 +36,114 @@
       </div>
     </header>
     <main>
-        <div class="container">
-            <h3>Productos</h3>
-            <hr>
-            <div
-                class="table-responsive"
-            >
-                <table
-                    class="table table-secondary"
-                >
-                    <thead>
-                        <tr>
-                            <th class="subtitle">Descripción</th>
-                            <th class="subtitle">Stock</th>
-                            <th class="subtitle">Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <?php
-                          // Consultar los datos
-                          $sql = "SELECT * FROM articulo";
-                          $result = $conn->query($sql);
-                          if ($result === false) {
-                              die("Error en la consulta: " . $conn->error);
-                          }
-                          if ($result->num_rows > 0) {
-                              while($row = $result->fetch_assoc()) {
-                                  echo "  <tr>
-                                              <td>{$row['descripcion']}</td>
-                                              <td>{$row['stock']}</td>
-                                              <td>{$row['precio_venta']}</td>
-                                          </tr>";
-                              }
-                          }            
-                      ?>
-                  </tbody>
-              </table>
-          </div>
+        <h3>Productos en stock</h3>
+        <table>
+            <tr>
+                <td class="Tipo">Producto</td>
+                <td class="Tipo">Descripción</td>
+                <td class="Tipo">Stock</td>
+            </tr>
+            <tr>
+                <td class="uno">Lenovo Legion 5 Pro (16ITH6H)</td>
+                <td class="uno">Portátil Gaming 16" QHD 165Hz, Intel Core i7-11800H, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3070</td>
+                <td class="uno">1400€</td>
+            </tr>
+            <tr>
+                <td class="dos">Corsair K70 RGB MK.2 Low Profile Rapidfire</td>
+                <td class="dos">Teclado mecánico RGB con switches Cherry MX Low Profile Speed, retroiluminación RGB por tecla</td>
+                <td class="dos">160€</td>
+            </tr>
+            <tr>
+                <td class="uno">LG 34GN850-B UltraGear</td>
+                <td class="uno">Monitor Gaming Ultrawide 34" 3440x1440 144Hz (160Hz OC) 1ms IPS G-Sync Compatible HDR400</td>
+                <td class="uno">600€</td>
+            </tr>
+            <tr>
+                <td class="dos">Logitech G Pro X SUPERLIGHT</td>
+                <td class="dos">Ratón inalámbrico gaming ultraligero con sensor HERO 25K y 5 botones programables</td>
+                <td class="dos">130€</td>
+            </tr>
+            <tr>
+                <td class="uno">Samsung 980 PRO 1TB</td>
+                <td class="uno">Unidad de estado sólido NVMe PCIe 4.0 M.2 de 1TB con velocidades de lectura/escritura de hasta 7000/5000 MB/s</td>
+                <td class="uno">140€</td>
+            </tr>
+            <tr>
+                <td class="dos">ASUS ROG Strix GeForce RTX 4080 OC Edition</td>
+                <td class="dos">Tarjeta gráfica NVIDIA GeForce RTX 4080 OC Edition con 16GB GDDR6X y diseño avanzado de refrigeración</td>
+                <td class="dos">1300€</td>
+            </tr>
+            <tr>
+                <td class="uno">Crucial Ballistix 32GB (2x16GB) DDR4 3200MHz</td>
+                <td class="uno">Kit de memoria RAM de 32GB (2 módulos de 16GB) DDR4 a 3200MHz CL16</td>
+                <td class="uno">90€</td>
+            </tr>
+            <tr>
+                <td class="dos">MSI MAG B650 TOMAHAWK WIFI</td>
+                <td class="dos">Placa base ATX con chipset AMD B650, Wi-Fi 6E, PCIe 4.0 y soporte para procesadores AMD Ryzen 7000 Series</td>
+                <td class="dos">220€</td>
+            </tr>
+            <tr>
+                <td class="uno">Corsair RM850x (2021)</td>
+                <td class="uno">Fuente de alimentación ATX de 850W con certificación 80+ Gold y condensadores 100% japoneses</td>
+                <td class="uno">130€</td>
+            </tr>
+            <tr>
+                <td class="dos">NZXT H510 Flow</td>
+                <td class="dos">Caja PC semitorre ATX con panel frontal perforado para un flujo de aire optimizado</td>
+                <td class="dos">80€</td>
+            </tr>
+            <tr>
+                <td class="uno">HyperX Cloud II Wireless</td>
+                <td class="uno">Auriculares gaming inalámbricos circumaurales con sonido 7.1 virtual y micrófono desmontable con cancelación</td>
+                <td class="uno">110€</td>
+            </tr>
+            <tr>
+                <td class="dos">HP Smart Tank 515</td>
+                <td class="dos">Impresora multifunción de inyección de tinta a color con Wi-Fi, tanques de tinta recargables y ADF</td>
+                <td class="dos">200€</td>
+            </tr>
+            <tr>
+                <td class="uno">Logitech Z623</td>
+                <td class="uno">Sistema de altavoces 2.1 con certificación THX y 200 vatios de potencia total (RMS)</td>
+                <td class="uno">160€</td>
+            </tr>
+            <tr>
+                <td class="dos">Logitech C920s HD Pro Webcam</td>
+                <td class="dos">Webcam Full HD 1080p con enfoque automático, corrección de luz y cubierta de privacidad</td>
+                <td class="dos">80€</td>
+            </tr>
+            <tr>
+                <td class="uno">TP-Link Archer AX55 (AX3000)</td>
+                <td class="uno">Router Wi-Fi 6 de doble banda AX3000 con velocidades de hasta 3 Gbps y tecnología OFDMA y MU-MIMO</td>
+                <td class="uno">100€</td>
+            </tr>
+            <tr>
+                <td class="dos">Microsoft 365 Familia</td>
+                <td class="dos">Suscripción anual para 6 usuarios a la suite de productividad de Microsoft (Word, Excel, PowerPoint, etc.)</td>
+                <td class="dos">100€</td>
+            </tr>
+            <tr>
+                <td class="uno">Norton 360 Deluxe (1 año, 5 dispositivos)</td>
+                <td class="uno">Licencia anual para software antivirus, firewall, VPN y protección de identidad para hasta 5 dispositivos</td>
+                <td class="uno">60€</td>
+            </tr>
+            <tr>
+                <td class="dos">Adobe Photoshop CC (Suscripción anual)</td>
+                <td class="dos">Suscripción anual al software líder en edición y retoque fotográfico profesional</td>
+                <td class="dos">240€</td>
+            </tr>
+            <tr>
+                <td class="uno">Dell UltraSharp U2723QE</td>
+                <td class="uno">Monitor portátil USB-C de 27" 4K UHD IPS con DisplayHDR 400 y concentrador USB-C</td>
+                <td class="uno">550€</td>
+            </tr>
+            <tr>
+                <td class="dos">AMD Ryzen 7 5800X</td>
+                <td class="dos">Procesador de escritorio AMD Ryzen 7 de 8 núcleos y 16 hilos con frecuencia base de 3.8 GHz</td>
+                <td class="dos">280€</td>
+            </tr>
+        </table>
     </main>
     <footer>
         <div class="copyright">

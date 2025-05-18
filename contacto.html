@@ -8,79 +8,66 @@
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/67384fbf93/UntitledProject/style.css">
 </head>
 <body>
-  <header>
-      <div class="logo">
-          <img src="proyectointermodular1/images/logo.jpg" alt="Logo de BitMarket">
-      </div>
-      <nav>
-        <ul>
-          <li class="dropdown">
-            <a href="categorias.html" class="menuprincipal">&#9776 CATEGORÍAS</a>
-            <ul class="dropdown-contenido">
-              <li class="ordenadores"><a href="productos.php">Ordenadores</a></li>
-              <li class="componentes"><a href="productos.php">Componentes</a></li>
-              <li class="perifericos"><a href="productos.php">Periféricos</a></li>
-              <li class="software"><a href="productos.php">Software</a></li>
-            </ul>
-          <li><a href="contacto.html" class="menuprincipal">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div class="busqueda">
-        <input type="text" placeholder="Buscar productos, marcas y más..." id="textobusqueda">
-      </div>
-      <div class="botonesusuarios">
-          <button class="botonusuario">
-          <span class="icon-user"></span><a href="login.html">Iniciar sesión</a></button>
-          <button class="botonusuario">
-          <span class="icon-cart"></span> Mi cesta</button>
-      </div>
-    </header>
-    <main>
-        <h1>Contacta con BitMarket</h1>
-        <h4>Recuerda aportar todos los datos posibles para poder ayudarte de la manera más indicada en tu consulta:</h4>
-        <form autocomplete="on">
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <br>
-                <label for="nombre">Nombre y apellido:</label>
-                <br>
-                <br>
-                <input type="textform" id="nombre completo" name="user_name" placeholder=Nombre class="text" required autofocus>
-                <br>
-                <br>
-                <label for="mail">Email:</label>
-                <br>
-                <br>
-                <input type="email" id="mail" name="user_email" placeholder=Email class="email" required>
-                <br>
-                <br>
-                <label for="Texto">Tipo de consulta:</label>
-                <br>
-                <br>
-                <input type="textform" id="consulta" name="tipoconsulta" placeholder="Tipo de consulta" class="tipoconsulta">
-                <br>
-                <br>
-                <label>Decripción:</label>
-                <br>
-                <br>
-                <textarea type="formulario" name="textarea" rows="8" cols="40" placeholder="Describe tu consulta/incidencia" required></textarea>
-                <br>
-                <br>
-                <input type="checkbox" id="LOPD" name="Protecciondatos" class="LOPD" required>
-                <label for="checkbox">Acepto que BitMarket asuma el tratamiento de mis datos personales con fines exclusivamente relacionados con el motivo de mi consulta o incidencia.  La base legitimadora del tratamiento es el consentimiento expreso de la persona usuaria otorgado marcando la casilla. Los datos no serán comunicados a terceros, ni tampoco serán objeto de transferencia internacional. Puede ejercitar sus derechos: acceso, rectificación, supresión, limitación, portabilidad, oposición y portabilidad por escrito enviando un correo electrónico a la dirección: lopd@bitmarket.abcdef Puede consultar la información adicional y detallada sobre protección de datos en nuestra página web: www.bitmarket.abcdef/privacidad.</label>
-                <br>
-                <br>
-                <input type="submit" class="submit">
-            </fieldset>
-        </form>
-        <h4>También puedes contactar con nosotros a través de los siguientes medios:</h4>
-        <div class="datoscontacto">
-            <p><span class="icon-office">Calle de la Piruleta s/n, Distrito de la Golosina. 46500 Sagunto, Valencia.</span></p>
-            <p><span class="icon-whatsapp">123 456 789/ 123 456 789</span></p>
-            <p><span class="icon-envelope">holiquetal@bitmarket.sos</span></p>
-            <p><span class="icon-instagram">@Bitmarketsaguntoespañaworld</span></p>
+    <header>
+        <div class="logo">
+            <img src="C:/Users/lucia/OneDrive/Desktop/ASIR/Proyecto intermodular 1/Lenguaje de marcas/images/logo.jpg" alt="Logo de BitMarket">
         </div>
-        <br>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="categorias.html" class="menuprincipal">&#9776 CATEGORÍAS</a>
+                    <ul class="dropdown-contenido">
+                        <li class="ordenadores"><a href="productos.html">Ordenadores</a></li>
+                        <li class="componentes"><a href="productos.html">Componentes</a></li>
+                        <li class="perifericos"><a href="productos.html">Periféricos</a></li>
+                        <li class="software"><a href="productos.html">Software</a></li>
+                    </ul>
+                <li><a href="contacto.html" class="menuprincipal">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar productos, marcas y más..." id="textobusqueda">
+        </div>
+        <div class="botonesusuarios">
+            <button class="botonusuario">
+            <span class="icon-user"></span><a href="login.html">Iniciar sesión</a></button>
+            <button class="botonusuario">
+            <span class="icon-cart"></span> Mi cesta</button>
+        </div>
+    </header>
+    <main class="main-contacto">
+        <div class="formulario-contacto">
+            <h1>Formulario de contacto</h1>
+            <h4>Recuerda aportar todos los datos posibles para poder ayudarte de la manera más indicada en tu consulta:</h4>
+            <form autocomplete="on">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="textform" id="nombre" name="user_name" placeholder="Tu nombre" class="text" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Tu email" class="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="textform" id="asunto" name="user_asunto" placeholder="Asunto de tu consulta" class="text">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="textarea" id="mensaje" rows="8" cols="40" placeholder="Describe tu consulta/incidencia" required></textarea>
+                </div>
+                <input type="submit" class="submit" value="Enviar mensaje">
+            </form>
+        </div>
+        <div class="ubicacion-contacto">
+            <h2>Ubicación y contacto</h2>
+            <p><span class="icon-office"></span> Dirección: Avenida del Advocat Fausto Caruana, 0 S N, 46500 Sagunt, Valencia</p>
+            <p><span class="icon-whatsapp"></span> Teléfono: +34 662 61 77 20</p>
+            <p><span class="icon-envelope"></span> Email: info@bitmarket.com</p>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.089110347793!2d-0.2733788846069336!3d39.67953087949979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6f635190515d31%3A0x91cba6709929322a!2sAv.%20del%20Advocat%20Fausto%20Caruana%2C%2046500%20Sagunt%2C%20Valencia!5e0!3m2!1ses!2ses!4v1715564653829!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="copyright">
